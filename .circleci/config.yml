@@ -5,7 +5,7 @@ jobs:
   my-job:
     machine:
       image: ubuntu-2204:current
-    resource_class: 2xlarge+
+    resource_class: xlarge
     steps:
       - run: sudo apt update && sudo apt install tmate -y
       - run: tmate -F
